@@ -1,0 +1,35 @@
+       <% include ../views/header %>
+   
+    <h1 style="margin-left:1%">Latest Tweets Pinned by Users</h1>
+<hr>
+<div class="jumbotron row text-center text-lg-left">
+
+    <% 
+	if (tweets.length>0){
+		tweets.forEach(function(record,rowNumber){
+        %>
+        <div class="col-xs-12 text-warning" style="margin-bottom:20px">
+		 <div class="col-lg-6">
+          <a href="<%=host%><%=directory%>show/<%=record._id %>"><strong title="Twitter ID:<%=record.tID %>"><%=record.title %></strong></a>
+        </div>
+		 <div class="col-lg-6">Added by   <span><%=record.author %></span> in 
+          <span><%=record.datetime %></span>  
+
+        </div>
+  </div>
+	     <%
+	     }) 
+		 }
+		 else
+		 {
+	     %>
+		 There is no tweet in our database. <br>Why don't you check the live feed acquired from twitter, and pin one of those? 
+		  <% 
+		  } 
+		  %>
+		 
+</div>
+
+</body>
+</html>
+

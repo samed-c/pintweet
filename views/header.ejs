@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PinTweet</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<style>
+.jumbotron
+{
+	margin-right: 1%;
+    margin-left: 1%;
+}
+</style>
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+        <div class="navbar-header">
+      <a class="navbar-brand" href="#">PinTweet ⇅ Share Portal</a>
+      <% if (username) { %>
+   <span class="col-xs-1 hidden-sm hidden-md hidden-lg hidden-xl" style="padding-top:15px;color: #9d9d9d;" href="#"><%= username %></span>
+<% } %>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+    </div>
+    <% if (username) { %>
+<span class="hidden-xs" style="float:right;padding-top:15px;color: #9d9d9d;" href="#">Welcome  <%= username %></span>
+<% } %>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         
+      <ul class="nav navbar-nav">
+   <li hover="active"><a href="<%=host %><%=directory%>" >Home</a></li>
+    <li hover="active"><a href="<%=host %><%=directory%>livefeed" >Live Feed</a></li>
+      <% if (!username) { %>
+       <li><a href="<%=host %><%=directory%>register">Register</a></li>
+       <li><a href="<%=host %><%=directory%>login">Login</a></li>
+       <% } %>
+         <% if (username) { %>
+        <li><a href="<%=host %><%=directory%>logout">Logout</a></li>
+        <% } %>
+         <li><a href="<%=host %><%=directory%>contact">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

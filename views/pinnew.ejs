@@ -1,0 +1,15 @@
+     <% include ../views/header %>
+
+<form method="POST" action=""  style="margin-left:8%">
+<h1>Pin This Tweet</h1>
+<label>Title: <input type="text" name="title" required="required" placeholder="Share a Slogan!" style="margin-bottom:5px; width:300px"></label><br>
+<label>Comments: <p><textarea name="comment" required="required" placeholder="Share Your Opinions" style="margin: 0px; height: 142px; width: 248px;"></textarea></p></label><br>
+
+<input type="hidden" name="tID" value="<%=tID %>">
+
+<button type="submit" class="btn btn-default btn-sm">PIN THIS TWEET</button>
+<p style="padding-top:50px">
+<a href="https://twitter.com/realDonaldTrump/status/<%=tID %>" target="_blank">Go to Original Tweet</a></p>
+</form>
+</body>
+</html>

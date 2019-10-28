@@ -1,0 +1,46 @@
+       <% include ../views/header %>
+   
+    <h1 style="margin-left:1%">Live Feeds from Donald Trump</h1>
+<hr>
+<div class="jumbotron row text-center text-lg-left">
+
+
+
+    <% 
+		tweets.forEach(function(record,rowNumber){
+        %>
+		
+        <div class="col-xs-12 text-warning" style="margin-bottom:20px">
+		 <div class="col-lg-8">
+          <a href="<%=host%><%=directory%>pinnew/<%=record.id_str %>" title="Pin this Tweet"><strong title="Click to pin the feed with Twitter ID:<%=record.id_str %>"><%=record.text %></strong> 📌</a>
+        </div>
+		 <div class="col-lg-4"> 
+		 
+		 
+		 
+		 <% if (record.retweeted_status){ %>Retweeted
+		  <%
+	     } 
+		 else
+		 {
+	     %>Tweeted
+		  <%
+		 }
+	     %> 
+ in 
+          <span><%= record.created_at %></span>
+        </div>
+		
+		
+  </div>
+	     <%
+	     }) 
+	     %>
+		 
+		 
+
+</div>
+
+</body>
+</html>
+
