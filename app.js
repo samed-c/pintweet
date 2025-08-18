@@ -283,7 +283,7 @@ const password  = req.body.password
 app.get(directory + "livefeed", function(req,res){
  
  const params = {
-     from: 'realDonaldTrump', count: 40
+     from: 'britneyspears', count: 40
   } 
 
 
@@ -357,4 +357,5 @@ app.post(directory +"pinnew/:id", urlencodedParser, function(req,res){
 
 app.listen(process.env.PORT, "0.0.0.0", function () {
     console.log("PinTweet Server has started");
+
 });
