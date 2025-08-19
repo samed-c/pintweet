@@ -6,7 +6,7 @@
 
 ## Description
 
-* PinTweet is a simple web based product which lets users to view last tweets from Britney Spears, share with pinning and write own comments and opinions with a slogan.
+* PinTweet is a simple web based product which lets users to view last tweets from Elon Musk, share with pinning and write own comments and opinions with a slogan.
 
 * PinTweet has a light and user friendly interface to access information fastly from any device.
 
@@ -21,7 +21,7 @@
   * Mobile compatible interface
   * Membership system (Register/Login/Delete Pin)
   * Latest Tweets Pinned by Users (Accessible by guest in homepage)
-  * Live Feed (Last 40 Tweets from Britney Spears' official twitter profile)
+  * Live Feed (Last 40 Tweets from Elon Musk's official twitter profile)
   * Pin This Tweet
   * Show pinned tweet with author's comments
 * Disadvantages
