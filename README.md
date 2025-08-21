@@ -2,7 +2,7 @@
 
 
 # PinTweet Share Portal [Node.js-MongoDB]
-* A web based platform for sharing twitter statuses as user based created for IDEKA.
+A web based platform for sharing twitter statuses as user based created for IDEKA.
 
 ## Description
 
