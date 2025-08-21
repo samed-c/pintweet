@@ -1,6 +1,3 @@
-
-
-
 # PinTweet Share Portal [Node.js-MongoDB]
 A web based platform for sharing twitter statuses as user based created for IDEKA.
 
@@ -50,5 +47,5 @@ A web based platform for sharing twitter statuses as user based created for IDEK
 * Let me know and i’ll get back to you soon. Write me to samedcansin@gmail.com
 
 ## About the author
-* Samed Cansin is a full-stack web developer from QC, creating responsive enterprise systems and informatics architectures for the Web. 
+* Samed is a full-stack web developer from QC, creating responsive enterprise systems and informatics architectures for the Web. 
 * Don't forget to review earlier canadian projects over portfolio website (http://www.samedcansin.com)
