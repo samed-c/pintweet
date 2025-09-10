@@ -1,5 +1,6 @@
 # PinTweet Share Portal [Node.js-MongoDB]
-A web based platform for sharing twitter statuses as user based created for IDEKA.
+A web based platform for fetching, sharing twitter posts over a user based portal. 
+* This app was developed for IDEKA.
 
 ## Description
 
@@ -42,9 +43,6 @@ A web based platform for sharing twitter statuses as user based created for IDEK
 * Drag and drop the files without compressing onto Cloud9 Environment tab.
 * Start a new terminal and run "node app.js" command.
 * Click "Preview" to review your website.
-
-## Have a question? Need assistance?
-* Let me know and i’ll get back to you soon. Write me to samedcansin@gmail.com
 
 ## About the author
 * Samed is a full-stack web developer from QC, creating responsive enterprise systems and informatics architectures for the Web.
